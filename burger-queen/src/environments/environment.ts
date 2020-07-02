@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig : {
+  firebase : {
     apiKey: "AIzaSyDOXNM4GEYzygiW7IGWSclYUByfSWXjSOo",
     authDomain: "moongold-lab.firebaseapp.com",
     databaseURL: "https://moongold-lab.firebaseio.com",

@@ -10,7 +10,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
-import { IngresComponent } from './components/ingres/ingres.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CocinaComponent } from './components/cocina/cocina.component';
 import { OrdenesListasComponent } from './components/ordenes-listas/ordenes-listas.component';
@@ -20,7 +19,6 @@ import { OrdenesListasComponent } from './components/ordenes-listas/ordenes-list
     AppComponent,
     HomeComponent,
     IngresoComponent,
-    IngresComponent,
     MenuComponent,
     CocinaComponent,
     OrdenesListasComponent,

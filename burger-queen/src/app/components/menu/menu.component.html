@@ -1,2 +1,67 @@
-<router-outlet></router-outlet>
-<p>menu works!</p>
+<app-ingreso class="header-ingreso"></app-ingreso>
+<br>
+
+<div class="part-top">
+<!--<button class="btnDesayuno" routerLink='/' routerLinkActive="router-link-active">Desayuno</button>-->
+  <button class="btn btn-warning"(click)="look=!look"routerLinkActive="router-link-active">Desayuno</button>
+  <button class="btn btn-warning"(click)="look1=!look1"routerLinkActive="router-link-active">Pasteles</button>
+  <button class="btn btn-warning"(click)="look2=!look2"routerLinkActive="router-link-active">Jugos</button>
+  <button class="btn btn-warning"(click)="look3=!look3"routerLinkActive="router-link-active">tea</button>
+</div>
+<div class="menu-container">
+  <div class="part-left">
+  <!--Desayunos-->
+  <div class="card-container" *ngIf="look">
+    <a class="card" href="https://angular.io/tutorial">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/Desayuno1.jpg"/></a>
+
+    <a class="card" href="https://angular.io/cli">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/Desayuno2.jpg"/></a>
+
+    <a class="card" href="https://blog.angular.io/">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/Desayuno4.jpg"/></a>
+  </div>
+
+  <!--Pasteles-->
+  <div class="card-container1" *ngIf="look1">
+    <a class="card" href="https://angular.io/tutorial">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/pastel1.jpg"/></a>
+
+    <a class="card" href="https://angular.io/cli">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/pastel2.jpg"/></a>
+
+    <a class="card" href="https://blog.angular.io/">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/pastel4.jpg"/></a>
+  </div>
+
+  <!--Jugos-->
+  <div class="card-container1" *ngIf="look2">
+    <a class="card" href="https://angular.io/tutorial">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/jugo1.jpg"/></a>
+
+    <a class="card" href="https://angular.io/cli">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/jugo2.jpg"/></a>
+
+    <a class="card" href="https://blog.angular.io/">
+      <img width="100%" alt="desayuno 1"src="./assets/image/food/jugo4.jpg"/></a>
+  </div>
+ <!--Tea-->
+ <div class="card-container1" *ngIf="look3">
+  <a class="card" href="https://angular.io/tutorial">
+    <img width="100%" alt="desayuno 1"src="./assets/image/food/tea1.jpg"/></a>
+
+  <a class="card" href="https://angular.io/cli">
+    <img width="100%" alt="desayuno 1"src="./assets/image/food/tea2.jpg"/></a>
+
+  <a class="card" href="https://blog.angular.io/">
+    <img width="100%" alt="desayuno 1"src="./assets/image/food/tea4.jpg"/></a>
+</div>
+</div>
+
+<div class="part-right">
+
+<div><h1>cliente</h1></div>
+
+</div>
+
+</div>

@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body {
+  background-image: url('./assets/image/Background.jpg');
+  background-repeat:no-repeat ;
+}
+
+img {
+  border-radius: 10px;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+
+button {
+  margin: 20;
+  border-radius: 10;
+}
+
+

@@ -12,37 +12,8 @@ import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CocinaComponent } from './components/cocina/cocina.component';
 
-import { RouterModule, Routes} from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
-const rutas: Routes = [
-
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home'
-  },
-
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-
-  {
-    path: 'ingreso',
-    component: IngresoComponent
-  },
-
-  {
-    path: 'menu',
-    component: MenuComponent
-  },
-
-  {
-    path: 'cocina',
-    component: CocinaComponent
-  },
-
-]
 
 @NgModule({
   declarations: [
@@ -50,16 +21,17 @@ const rutas: Routes = [
     HomeComponent,
     IngresoComponent,
     MenuComponent,
-    CocinaComponent,
+    CocinaComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
-    RouterModule.forRoot(rutas)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

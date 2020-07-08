@@ -1,7 +1,24 @@
-<router-outlet></router-outlet>
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <img width="68" alt="Moon Gold"src="./assets/image/moon-gold.png"/>
-    <div class="spacer"></div>
+  <img
+    width="68"
+    alt="moon-gold Logo"
+    src="../assets/image/moon-gold.png"
+  />
+
+  <h2> HOME <span>|</span> INGRESO</h2>
+ <!-- <h2> MENU <span>|</span> DESAYUNOS</h2>
+  <h2> MENU <span>|</span> PASTELES</h2>
+  <h2> MENU <span>|</span> BEBIDAS</h2>
+  <h2> MENU <span>|</span> TÉA</h2>
+  <h2> CONINA <span>|</span> OREDENES EN ESPERA</h2>
+  <h2> COCINA <span>|</span> ORDENES LISTAS</h2>-->
 </div>
+
+<br> <br> <br>
+<button class="btn btn-mesero" routerLink='/menu'>Mesero</button>
+<button class="btn btn-cocina"routerLink='/cocina'>Cocina</button>
+
+
+<router-outlet></router-outlet>
 

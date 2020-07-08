@@ -32,9 +32,19 @@ p {
 }
 
 
-button {
-  margin: 20;
-  border-radius: 10;
+span {
+  color: #DEAB29;
 }
+
+h2 {
+  color: #EBEBE3;
+}
+
+.btn {
+background-color: #CBCCCC;
+margin-right: 8px;
+border-radius: 10;
+}
+
 
 

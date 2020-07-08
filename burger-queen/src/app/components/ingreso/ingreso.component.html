@@ -1,22 +1,17 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <img
-    width="68"
-    alt="moon-gold Logo"
-    src="../assets/image/moon-gold.png"
-  />
-
-  <h2> HOME <span>|</span> INGRESO</h2>
- <!-- <h2> MENU <span>|</span> DESAYUNOS</h2>
-  <h2> MENU <span>|</span> PASTELES</h2>
-  <h2> MENU <span>|</span> BEBIDAS</h2>
-  <h2> MENU <span>|</span> TÉA</h2>
-  <h2> CONINA <span>|</span> OREDENES EN ESPERA</h2>
-  <h2> COCINA <span>|</span> ORDENES LISTAS</h2>-->
+  <div routerLink='/ingreso'>
+  <img width="68" alt="moon-gold Logo" src="../assets/image/moon-gold.png"/>
+</div>
+  <button class="btn btn-mesero" routerLink='/menu'>Menú</button>
+  <button class="btn btn-mesero" routerLink='/cocina'>Cocina</button>
+  <button class="btn btn-mesero" routerLink='/cocina'>Ordenes Listas</button>
 </div>
 
 <br> <br> <br>
-<button class="btn btn-mesero" routerLink='/menu'>Mesero</button>
+<h2 *ngIf="out"> HOME <span>|</span> INGRESO</h2>
+
+<button class="btn btn-mesero" (click)="out=!out" routerLink='/menu'>Mesero</button>
 <button class="btn btn-cocina"routerLink='/cocina'>Cocina</button>
 
 

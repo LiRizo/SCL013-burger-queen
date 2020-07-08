@@ -101,6 +101,5 @@ justify-content: space-around;
 .btn {
   border-radius: 10;
   padding: 16;
-  margin: 10;
-
+  margin-right: 5px;
   }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ingreso.component.css']
 })
 export class IngresoComponent implements OnInit {
-
+out:boolean = true;
   constructor() { }
 
   ngOnInit(): void {

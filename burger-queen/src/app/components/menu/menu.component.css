@@ -4,10 +4,7 @@
 justify-content: space-around;
 }
 
-.menu {
-  width: 711px;
-  height: 658px;
-}
+
 
 .header-ingreso {
   grid-area: header-ingreso;

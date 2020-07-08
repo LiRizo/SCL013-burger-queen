@@ -1,6 +1,5 @@
 <app-ingreso></app-ingreso>
 <br>
-<div class="menu-container">
 <div class="part-top">
 <!--<button class="btnDesayuno" routerLink='/' routerLinkActive="router-link-active">Desayuno</button>-->
   <button class="btn btn-warning"(click)="look=!look"routerLinkActive="router-link-active">Desayuno</button>
@@ -8,7 +7,7 @@
   <button class="btn btn-warning"(click)="look2=!look2"routerLinkActive="router-link-active">Jugos</button>
   <button class="btn btn-warning"(click)="look3=!look3"routerLinkActive="router-link-active">tea</button>
 </div>
-<div class="menu">
+<div class="menu-container">
   <div class="part-left">
   <!--Desayunos-->
   <div class="card-container" *ngIf="look">
@@ -63,5 +62,5 @@
 <div><h1>cliente</h1></div>
 
 </div>
-
 </div>
+

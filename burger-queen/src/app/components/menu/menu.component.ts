@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-menu',
@@ -7,15 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  look:boolean = false;
-  look1:boolean = false;
-  look2:boolean = false;
-  look3:boolean = false;
-
-  constructor() { }
-
+  items: Observable<any[]>;
+  constructor(firestore: AngularFirestore) {
+    this.items = firestore.collection('items').valueChanges();
+  }
   ngOnInit(): void {
   }
-
 }
 

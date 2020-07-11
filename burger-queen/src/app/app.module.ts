@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
@@ -14,6 +15,10 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CocinaComponent } from './components/cocina/cocina.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ConexionService } from './services/conexion.service';
+import { MenuAddComponent } from './components/menu-add/menu-add.component';
+import { MenuFoodComponent } from './components/menu-food/menu-food.component';
+
 
 
 @NgModule({
@@ -22,17 +27,20 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     IngresoComponent,
     MenuComponent,
-    CocinaComponent
+    CocinaComponent,
+    MenuAddComponent,
+    MenuFoodComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ConexionService],
   bootstrap: [AppComponent]
 })
 

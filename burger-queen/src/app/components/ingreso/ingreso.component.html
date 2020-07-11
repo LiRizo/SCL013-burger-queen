@@ -9,11 +9,9 @@
 </div>
 
 <br> <br> <br>
-<h2 *ngIf="out"> HOME <span>|</span> INGRESO</h2>
+<h2> HOME <span>|</span> INGRESO</h2>
 
-<button class="btn btn-mesero" (click)="out=!out" routerLink='/menu'>Mesero</button>
+<button class="btn btn-mesero" routerLink='/menu'>Mesero</button>
 <button class="btn btn-cocina"routerLink='/cocina'>Cocina</button>
 
-
 <router-outlet></router-outlet>
-

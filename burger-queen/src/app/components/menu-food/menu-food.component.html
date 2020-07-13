@@ -9,58 +9,100 @@
   <button class="btn btn-warning"(click)="look=!look"routerLinkActive="router-link-active">Desayuno</button>
   <button class="btn btn-warning"(click)="look1=!look1"routerLinkActive="router-link-active">Pasteles</button>
   <button class="btn btn-warning"(click)="look2=!look2"routerLinkActive="router-link-active">Jugos</button>
-  <button class="btn btn-warning"(click)="look3=!look3"routerLinkActive="router-link-active">tea</button>
+  <button class="btn btn-warning"(click)="look3=!look3"routerLinkActive="router-link-active">Téa</button>
+</div>
+<div class="alert alert-warning" role="alert"*ngFor="let item of items">
+  {{item.client}} - {{item.tables}} - {{item.lot}} - {{item.food}} - {{item.price}}
 </div>
 
 <div class="menu-container">
   <div class="part-left">
   <!--Desayunos-->
-  <div class="card-container" *ngIf="look">
+  <div class="card-container" role="alert"*ngIf="look">
 
-    <a class="card" href="https://angular.io/tutorial">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/Desayuno1.jpg"/>
-      <button class="add-food" type="submit"></button>
+
+        <a class="card">
+          <div *ngFor="let item of items">
+          <img [src]="item.image"/>
+          <p>{{item.food}} {{item.price}}s/</p>
+          <button class="btn" type="submit"></button>
+        </div>
+        </a>
+   <!--
+    <textarea type="hidden" class="form-control" name="name" [(ngModel)]="item.name"cols="30" rows="10" value="1er Desayuno"></textarea>
+
+    <div class="alert alert-warning" role="alert"*ngFor="let item of items">
+  {{item.name}} - {{item.total}}
+<div class="float-right" (click)="clean(item)"><i class="far fa-trash-alt"></i></div>
+</div>
+     <input
+      type="text"
+      name="name" class="form-control"
+      [(ngModel)]="item.name" [(ngModel)]="item.total">
+   [(ngModel)]="item.name" [(ngModel)]="item.total"
+   <a name="name" [(ngModel)]="item.name" >1er Desayuno</a>
+ <a [(ngModel)]="item.total"><h6>4 CLP</h6></a>
+
+    <a class="card">
+      <img width="70" alt="2 desayuno"src="./assets/image/food/desayuno2.jpg"/>
+      <div> <h6>2do Desayuno</h6><h6>3 CLP</h6> </div>
     </a>
 
-    <a class="card" href="https://angular.io/cli">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/Desayuno2.jpg"/></a>
-
-    <a class="card" href="https://blog.angular.io/">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/Desayuno4.jpg"/></a>
-  </div>
+    <a class="card" >
+      <img width="70" alt="3 desayuno"src="./assets/image/food/desayuno3.jpg"/>
+      <div> <h6>3er Desayuno</h6><h6>3 CLP</h6> </div>
+    </a>
+  </div>-->
 
   <!--Pasteles-->
-  <div class="card-container1" *ngIf="look1">
-    <a class="card" href="https://angular.io/tutorial">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/pastel1.jpg"/></a>
+  <div class="card-container" *ngIf="look1">
+    <a class="card">
+      <img width="70" alt="1 pastel"src="./assets/image/food/pastel1.jpg"/>
+      <div> <h6>1er Pastel</h6><h6>4 CLP</h6> </div>
+    </a>
 
-    <a class="card" href="https://angular.io/cli">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/pastel2.jpg"/></a>
+    <a class="card">
+      <img width="70" alt="2 pastel"src="./assets/image/food/pastel2.jpg"/>
+      <div> <h6>2do Pastel</h6><h6>3 CLP</h6> </div>
+    </a>
 
-    <a class="card" href="https://blog.angular.io/">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/pastel4.jpg"/></a>
+    <a class="card">
+      <img width="70" alt="3 pastel"src="./assets/image/food/pastel4.jpg"/>
+      <div> <h6>3er Pastel</h6><h6>3 CLP</h6> </div>
+    </a>
   </div>
 
   <!--Jugos-->
-  <div class="card-container1" *ngIf="look2">
-    <a class="card" href="https://angular.io/tutorial">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/jugo1.jpg"/></a>
+  <div class="card-container" *ngIf="look2">
+    <a class="card">
+      <img width="70" alt="1 jugo"src="./assets/image/food/jugo1.jpg"/>
+      <div> <h6>1er Jugo</h6><h6>1 CLP</h6> </div>
+    </a>
 
-    <a class="card" href="https://angular.io/cli">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/jugo2.jpg"/></a>
+    <a class="card">
+      <img width="70" alt="2 jugo"src="./assets/image/food/jugo2.jpg"/>
+      <div> <h6>2do Jugo</h6><h6>2 CLP</h6> </div>
+    </a>
 
-    <a class="card" href="https://blog.angular.io/">
-      <img width="100%" alt="desayuno 1"src="./assets/image/food/jugo4.jpg"/></a>
+    <a class="card">
+      <img width="70" alt="3 jugo"src="./assets/image/food/jugo4.jpg"/>
+      <div> <h6>3er Jugo</h6><h6>2 CLP</h6> </div>
+    </a>
   </div>
  <!--Tea-->
- <div class="card-container1" *ngIf="look3">
-  <a class="card" href="https://angular.io/tutorial">
-    <img width="100%" alt="desayuno 1"src="./assets/image/food/tea1.jpg"/></a>
+ <div class="card-container" *ngIf="look3">
+  <a class="card">
+    <img width="70" alt="1 tea"src="./assets/image/food/tea1.jpg"/>
+    <div> <h6>1er Téa</h6><h6>1 CLP</h6> </div>
+  </a>
 
-  <a class="card" href="https://angular.io/cli">
-    <img width="100%" alt="desayuno 1"src="./assets/image/food/tea2.jpg"/></a>
+  <a class="card">
+    <img width="70" alt="2 tea"src="./assets/image/food/tea2.jpg"/>
+    <div> <h6>2do Téa</h6><h6>1 CLP</h6> </div>
+  </a>
 
-  <a class="card" href="https://blog.angular.io/">
-    <img width="100%" alt="desayuno 1"src="./assets/image/food/tea4.jpg"/></a>
-</div>
+  <a class="card">
+    <img width="70" alt="3 tea"src="./assets/image/food/tea4.jpg"/>
+    <div> <h6>3er Téa</h6><h6>2 CLP</h6> </div>
+  </a>
 </div>

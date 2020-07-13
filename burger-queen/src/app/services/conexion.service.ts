@@ -3,7 +3,14 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-export interface Item { name: string; }
+export interface Item {
+  client: string;
+  table: number;
+  lot: number;
+  image: string;
+  food: string;
+  price: number;
+}
 
 
 @Injectable({
@@ -27,10 +34,10 @@ export class ConexionService {
   listaItem(){
     return this.items;
   }
-  agregarItem( item: Item){
+  attachItem( item: Item){
     this.itemsCollection.add(item);
    }
-   eliminarItem(item){
+   cleanItem(item){
      this.itemDoc = this.afs.doc<Item>(`items/${item.id}`);
      this.itemDoc.delete();
    }

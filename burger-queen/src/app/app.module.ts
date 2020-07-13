@@ -18,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ConexionService } from './services/conexion.service';
 import { MenuAddComponent } from './components/menu-add/menu-add.component';
 import { MenuFoodComponent } from './components/menu-food/menu-food.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -38,7 +39,8 @@ import { MenuFoodComponent } from './components/menu-food/menu-food.component';
     AngularFireDatabaseModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [ConexionService],
   bootstrap: [AppComponent]

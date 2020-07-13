@@ -1,0 +1,96 @@
+{
+"menu": [
+  {
+    "id": "01",
+    "image": "../../../assets/image/food/desayuno1.jpg",
+    "food": "1er Desayuno",
+    "price": "4",
+    "extra": [
+  {
+    "id": "a01",
+    "name": "adicional 1",
+    "price": "1"
+  },
+  {
+    "id": "a02",
+    "name": "adicional 2",
+    "price": "1"
+  },
+  {
+    "id": "a03",
+    "name": "adicional 3",
+    "price": "1"
+  }
+    ]
+  },
+  {
+    "id": "02",
+    "image": "../../../assets/image/food/desayuno2.jpg",
+    "food": "2do Desayuno",
+    "price": "2",
+    "extra": [
+  {
+    "id": "a01",
+    "name": "adicional 1",
+    "price": "1"
+  },
+  {
+    "id": "a02",
+    "name": "adicional 2",
+    "price": "1"
+  },
+  {
+    "id": "a03",
+    "name": "adicional 3",
+    "price": "1"
+  }
+    ]
+  },
+  {
+    "id": "03",
+    "image": "../../../assets/image/food/desayuno3.jpg",
+    "food": "3er Desayuno",
+    "price": "3",
+    "extra": [
+  {
+    "id": "a01",
+    "name": "adicional 1",
+    "price": "1"
+  },
+  {
+    "id": "a02",
+    "name": "adicional 2",
+    "price": "1"
+  },
+  {
+    "id": "a03",
+    "name": "adicional 3",
+    "price": "1"
+  }
+    ]
+  },
+  {
+    "id": "04",
+    "image": "../../../assets/image/food/desayuno4.jpg",
+    "food": "4to Desayuno",
+    "price": "2",
+    "extra": [
+  {
+    "id": "a01",
+    "name": "adicional 1",
+    "price": "1"
+  },
+  {
+    "id": "a02",
+    "name": "adicional 2",
+    "price": "1"
+  },
+  {
+    "id": "a03",
+    "name": "adicional 3",
+    "price": "1"
+  }
+    ]
+  }
+]
+}

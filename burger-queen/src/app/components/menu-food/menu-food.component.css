@@ -48,16 +48,15 @@ justify-content: space-around;
   border-radius: 10px;
   border: 1px solid #eee;
   background-color: #fafafa;
-  height: 130px;
-  width: 100px;
+  height: 125px;
+  width: 120px;
   margin: 0 8px 16px;
-  padding: 16px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
   line-height: 24px;
+  text-align: right;
 }
 
 .card-container .card:not(:last-child) {
@@ -96,7 +95,3 @@ justify-content: space-around;
   margin-left: 60px;
 }
 
-
-.add-food {
-
-}

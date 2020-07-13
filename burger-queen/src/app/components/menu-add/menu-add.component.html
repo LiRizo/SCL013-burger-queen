@@ -1,1 +1,48 @@
-<p>menu-add works!</p>
+<table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <td colspan="6">
+        <div class="data-row">
+          <form class="info-row" (ngSubmit)="attach()">
+            <h5>Cliente:</h5>
+            <input
+             type="text" placeholder="cliente"
+             name="client" class="clients" [(ngModel)]="item.client">
+             <h5>Mesa:</h5>
+            <input
+             type="number" name="tables" class="tables" [(ngModel)]="item.tables">
+          </form>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="3" scope="col">Cantidad</th>
+      <th scope="col">Producto</th>
+      <th scope="col">Precio</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><i class="fas fa-minus-circle"></i></th>
+      <td >{{item.lot}}</td>
+      <td><i class="fas fa-plus-circle"></i></td>
+      <td>{{item.food}}</td>
+      <td>{{item.price}}</td>
+      <td><i class="far fa-trash-alt"></i></td>
+    </tr>
+
+    <tr>
+      <th colspan="3" scope="col">Total</th>
+      <th scope="col">s/</th>
+      <th colspan="2" scope="col">CLP</th>
+    </tr>
+
+    <tr>
+      <td colspan="6">
+        <div></div>
+        <button class="btn btn-warning" type="submit">Confirmar pedido</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

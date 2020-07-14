@@ -12,12 +12,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { MenuAddComponent } from './components/menu-add/menu-add.component';
+import { MenuFoodComponent } from './components/menu-food/menu-food.component';
 import { CocinaComponent } from './components/cocina/cocina.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ConexionService } from './services/conexion.service';
-import { MenuAddComponent } from './components/menu-add/menu-add.component';
-import { MenuFoodComponent } from './components/menu-food/menu-food.component';
+
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -28,8 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     IngresoComponent,
     MenuComponent,
-    CocinaComponent,
     MenuAddComponent,
+    CocinaComponent,
     MenuFoodComponent
   ],
   imports: [

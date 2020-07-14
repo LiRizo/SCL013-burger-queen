@@ -2,8 +2,10 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { OrderService } from 'src/app/order.service';
 
 export interface Item {
+
   client: string;
   table: number;
   lot: number;
@@ -11,7 +13,6 @@ export interface Item {
   food: string;
   price: number;
 }
-
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,7 @@ export class ConexionService {
   private itemDoc: AngularFirestoreDocument<Item>;
   private itemsCollection: AngularFirestoreCollection<Item>;
   items: Observable<Item[]>;
+
   constructor(private readonly afs: AngularFirestore) {
     this.itemsCollection = afs.collection<Item>('items');
     this.items = this.itemsCollection.snapshotChanges().pipe(
@@ -41,5 +43,4 @@ export class ConexionService {
      this.itemDoc = this.afs.doc<Item>(`items/${item.id}`);
      this.itemDoc.delete();
    }
-
 }

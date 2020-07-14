@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ConexionService } from 'src/app/services/conexion.service';
+import { MFoodService } from '../menu-food/m-food.service';
+import { OrderService } from 'src/app/order.service';
+
 
 @Component({
   selector: 'app-menu-food',
@@ -12,31 +14,20 @@ export class MenuFoodComponent implements OnInit {
   look2:boolean = false;
   look3:boolean = false;
 
-  items: any;
+  result :any[] = [];
 
-  item: any = {
-    client:'',
-    table: 0,
-    lot: 0,
-    image: '',
-    food: '',
-    price: 0
-  }
-
-  constructor(private service:ConexionService) {
-    this.service.listaItem().subscribe(item => {
-      this.items = item;
-      console.log(this.items)
+  constructor(public food : MFoodService, public order: OrderService) {
+    this.food.mFood()
+    .subscribe(resp=> {
+      this.result=resp["menu"]
+      console.log(resp)
     })
+
    }
 
   ngOnInit(): void {
   }
-  attach(){
-    this.service.attachItem(this.item);
-    this.item.client = '';
-    this.item.table = 0;
-    this.item.food = '';
-    this.item.price = 0;
-   }
+  press(item){
+    this.order.order.push(item)
+  }
 }

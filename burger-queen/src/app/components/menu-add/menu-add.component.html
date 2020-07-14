@@ -3,14 +3,14 @@
     <tr>
       <td colspan="6">
         <div class="data-row">
-          <form class="info-row" (ngSubmit)="attach()">
+          <form class="info-row">
             <h5>Cliente:</h5>
             <input
              type="text" placeholder="cliente"
-             name="client" class="clients" [(ngModel)]="item.client">
+             name="client" class="clients" >
              <h5>Mesa:</h5>
             <input
-             type="number" name="tables" class="tables" [(ngModel)]="item.tables">
+             type="number" name="tables" class="tables" >
           </form>
         </div>
       </td>
@@ -23,13 +23,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row"><i class="fas fa-minus-circle"></i></th>
-      <td >{{item.lot}}</td>
+    <tr scope="col"*ngFor="let product of selectedProduct">
+      <th><i class="fas fa-minus-circle"></i></th>
+      <td></td>
       <td><i class="fas fa-plus-circle"></i></td>
-      <td>{{item.food}}</td>
-      <td>{{item.price}}</td>
-      <td><i class="far fa-trash-alt"></i></td>
+      <td>{{product.food}}</td>
+      <td>{{product.price}}</td>
+      <td><div class="float-right" (click)="eliminar(item)"><i class="far fa-trash-alt"></i></div></td>
     </tr>
 
     <tr>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ConexionService } from 'src/app/services/conexion.service';
+import { OrderService } from 'src/app/order.service';
+import { MFoodService } from 'src/app/components/menu-food/m-food.service';
+
 
 @Component({
   selector: 'app-menu-add',
@@ -7,33 +9,15 @@ import { ConexionService } from 'src/app/services/conexion.service';
   styleUrls: ['./menu-add.component.css']
 })
 export class MenuAddComponent implements OnInit {
-  items: any;
 
-item: any = {
-  client:'',
-  tables: 0,
-  lot: 0,
-  image: '',
-  food: '',
-  price: 0
-}
-  constructor(private service:ConexionService) {
-    this.service.listaItem().subscribe(item => {
-      this.items = item;
-      console.log(this.items)
-    })
+selectedProduct : Array<any> = [];
+
+  constructor(public order:OrderService) {
+
   }
 
   ngOnInit(): void {
+    this.selectedProduct=this.order.order;
   }
-  clean(item){
-    this.service.cleanItem(item);
-    }
-    attach(){
-      this.service.attachItem(this.item);
-      this.item.client = '';
-      this.item.table = 0;
-      this.item.food = '';
-      this.item.price = 0;
-     }
+
 }

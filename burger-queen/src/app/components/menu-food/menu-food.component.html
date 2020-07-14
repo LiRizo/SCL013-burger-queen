@@ -2,7 +2,6 @@
 <h2 *ngIf="look1"> MENU <span>|</span> PASTELES</h2>
 <h2 *ngIf="look2"> MENU <span>|</span> BEBIDAS</h2>
 <h2 *ngIf="look3"> MENU <span>|</span> TÉA</h2>
-
 <br>
 <div class="part-top">
 <!--<button class="btnDesayuno" routerLink='/' routerLinkActive="router-link-active">Desayuno</button>-->
@@ -11,23 +10,26 @@
   <button class="btn btn-warning"(click)="look2=!look2"routerLinkActive="router-link-active">Jugos</button>
   <button class="btn btn-warning"(click)="look3=!look3"routerLinkActive="router-link-active">Téa</button>
 </div>
-<div class="alert alert-warning" role="alert"*ngFor="let item of items">
-  {{item.client}} - {{item.tables}} - {{item.lot}} - {{item.food}} - {{item.price}}
-</div>
 
 <div class="menu-container">
-  <div class="part-left">
   <!--Desayunos-->
-  <div class="card-container" role="alert"*ngIf="look">
+  <div class="part-left">
+    <div class="desayuno" role="alert"*ngIf="look">
 
-
+    <div *ngFor= "let item of result;index as i" (click)="press(item)">
+      <div class="card-container">
         <a class="card">
-          <div *ngFor="let item of items">
-          <img [src]="item.image"/>
+          <div>
+          <img width="120px" src={{item.image}}/>
           <p>{{item.food}} {{item.price}}s/</p>
           <button class="btn" type="submit"></button>
         </div>
         </a>
+      </div>
+    </div>
+
+    </div>
+  </div>
    <!--
     <textarea type="hidden" class="form-control" name="name" [(ngModel)]="item.name"cols="30" rows="10" value="1er Desayuno"></textarea>
 
@@ -43,66 +45,21 @@
    <a name="name" [(ngModel)]="item.name" >1er Desayuno</a>
  <a [(ngModel)]="item.total"><h6>4 CLP</h6></a>
 
-    <a class="card">
-      <img width="70" alt="2 desayuno"src="./assets/image/food/desayuno2.jpg"/>
-      <div> <h6>2do Desayuno</h6><h6>3 CLP</h6> </div>
-    </a>
-
-    <a class="card" >
-      <img width="70" alt="3 desayuno"src="./assets/image/food/desayuno3.jpg"/>
-      <div> <h6>3er Desayuno</h6><h6>3 CLP</h6> </div>
-    </a>
   </div>-->
 
   <!--Pasteles-->
   <div class="card-container" *ngIf="look1">
-    <a class="card">
-      <img width="70" alt="1 pastel"src="./assets/image/food/pastel1.jpg"/>
-      <div> <h6>1er Pastel</h6><h6>4 CLP</h6> </div>
-    </a>
 
-    <a class="card">
-      <img width="70" alt="2 pastel"src="./assets/image/food/pastel2.jpg"/>
-      <div> <h6>2do Pastel</h6><h6>3 CLP</h6> </div>
-    </a>
-
-    <a class="card">
-      <img width="70" alt="3 pastel"src="./assets/image/food/pastel4.jpg"/>
-      <div> <h6>3er Pastel</h6><h6>3 CLP</h6> </div>
-    </a>
   </div>
 
   <!--Jugos-->
   <div class="card-container" *ngIf="look2">
-    <a class="card">
-      <img width="70" alt="1 jugo"src="./assets/image/food/jugo1.jpg"/>
-      <div> <h6>1er Jugo</h6><h6>1 CLP</h6> </div>
-    </a>
 
-    <a class="card">
-      <img width="70" alt="2 jugo"src="./assets/image/food/jugo2.jpg"/>
-      <div> <h6>2do Jugo</h6><h6>2 CLP</h6> </div>
-    </a>
-
-    <a class="card">
-      <img width="70" alt="3 jugo"src="./assets/image/food/jugo4.jpg"/>
-      <div> <h6>3er Jugo</h6><h6>2 CLP</h6> </div>
-    </a>
   </div>
  <!--Tea-->
  <div class="card-container" *ngIf="look3">
-  <a class="card">
-    <img width="70" alt="1 tea"src="./assets/image/food/tea1.jpg"/>
-    <div> <h6>1er Téa</h6><h6>1 CLP</h6> </div>
-  </a>
 
-  <a class="card">
-    <img width="70" alt="2 tea"src="./assets/image/food/tea2.jpg"/>
-    <div> <h6>2do Téa</h6><h6>1 CLP</h6> </div>
-  </a>
+</div>
 
-  <a class="card">
-    <img width="70" alt="3 tea"src="./assets/image/food/tea4.jpg"/>
-    <div> <h6>3er Téa</h6><h6>2 CLP</h6> </div>
-  </a>
+
 </div>

@@ -1,17 +1,31 @@
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <div routerLink='/ingreso'>
-  <img width="68" alt="moon-gold Logo" src="../assets/image/moon-gold.png"/>
-</div>
-  <button class="btn btn-mesero" routerLink='/menu'>Menú</button>
-  <button class="btn btn-mesero" routerLink='/cocina'>Cocina</button>
-  <button class="btn btn-mesero" routerLink='/cocina'>Ordenes Listas</button>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink='/ingreso'> <img width="68" alt="moon-gold Logo" src="../assets/image/moon-gold.png"/></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav">
+
+      <li class="nav-item" routerLinkActive="active">
+          <a class="nav-item nav-link" routerLink='/menu'>Menu</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-item nav-link" routerLink='/cocina'>Cocina</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-item nav-link" routerLink='/cocina'>Ordenes Listas</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <br> <br> <br>
 <h2> HOME <span>|</span> INGRESO</h2>
 
-<button class="btn btn-mesero" routerLink='/menu'>Mesero</button>
-<button class="btn btn-cocina"routerLink='/cocina'>Cocina</button>
-
+<button type="button" class="btn btn-secondary btn-lg" routerLink='/menu'>Mesero
+  <i class="fas fa-utensils"></i>
+</button>
+<button type="button" class="btn btn-secondary btn-lg" routerLink='/cocina'>Cocina
+  <i class="fas fa-concierge-bell"></i>
+</button>
 <router-outlet></router-outlet>

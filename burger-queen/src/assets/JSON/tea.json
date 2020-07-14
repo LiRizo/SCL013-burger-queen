@@ -1,0 +1,31 @@
+{
+  "tea": [
+    {
+      "id": "01",
+      "image": "../../../assets/image/food/tea1.jpg",
+      "food": "tea de manzanilla",
+      "price": "2"
+    },
+
+    {
+      "id": "02",
+      "image": "../../../assets/image/food/tea2.jpg",
+      "food": "tea de Hōjicha",
+      "price": "2"
+    },
+
+    {
+      "id": "03",
+      "image": "../../../assets/image/food/tea3.jpg",
+      "food": "tea rojo ",
+      "price": "2"
+    },
+
+    {
+      "id": "04",
+      "image": "../../../assets/image/food/tea4.jpg",
+      "food": "tea de varias hierbas",
+      "price": "2"
+    }
+  ]
+}

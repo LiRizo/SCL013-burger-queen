@@ -1,0 +1,31 @@
+{
+  "drink" : [
+    {
+      "id": "01",
+      "image": "../../../assets/image/food/jugo1.jpg",
+      "food": "Bebida refrescante de kiwui y naranja",
+      "price": "3"
+    },
+
+    {
+      "id": "02",
+      "image": "../../../assets/image/food/jugo2.jpg",
+      "food": "Bebida refrescante de frambuesa y menta",
+      "price": "3"
+    },
+
+    {
+      "id": "03",
+      "image": "../../../assets/image/food/jugo3.jpg",
+      "food": "Bebida refrescante de arandanos y limón",
+      "price": "3"
+    },
+
+    {
+      "id": "04",
+      "image": "../../../assets/image/food/jugo4.jpg",
+      "food": "Bebida refrescante mixfrutal",
+      "price": "3"
+    }
+  ]
+}

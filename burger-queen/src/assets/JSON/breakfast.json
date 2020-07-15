@@ -21,7 +21,7 @@
   {
     "id": "a03",
     "image":"../../../assets/image/food/adicional3.jpg",
-    "name": "frutos secos",
+    "name": "Frutos secos",
     "price": "1"
   }
     ]
@@ -48,7 +48,7 @@
       {
         "id": "a03",
         "image":"../../../assets/image/food/adicional3.jpg",
-        "name": "frutos secos",
+        "name": "Frutos secos",
         "price": "1"
       }
         ]
@@ -75,7 +75,7 @@
       {
         "id": "a03",
         "image":"../../../assets/image/food/adicional3.jpg",
-        "name": "frutos secos",
+        "name": "Frutos secos",
         "price": "1"
       }
         ]
@@ -85,7 +85,7 @@
   {
     "id": "04",
     "image": "../../../assets/image/food/desayuno4.jpg",
-    "food": "4to Desayuno",
+    "food": "Mini tarta de frutas",
     "price": "2",
     "extra": [
       {
@@ -103,7 +103,7 @@
       {
         "id": "a03",
         "image":"../../../assets/image/food/adicional3.jpg",
-        "name": "frutos secos",
+        "name": "Frutos secos",
         "price": "1"
       }
         ]

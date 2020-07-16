@@ -14,6 +14,6 @@ console.log('servicio cliente');
 
    }
    mFood(){
-    return this.http.get('../../assets/JSON/breakfast.json')
-   }
+    return this.http.get('../../assets/JSON/data.json')
+  }
 }

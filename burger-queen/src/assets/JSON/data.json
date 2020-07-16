@@ -1,0 +1,224 @@
+export const DATA = [
+
+  {
+    "id":"0",
+    "name":"breakfast",
+     "product":[
+      {
+        "id": "01",
+        "image": "../../../assets/image/food/desayuno1.jpg",
+        "food": "Panqueques con frijoles y queso",
+        "price": "4",
+        "extra": [
+      {
+        "id": "a01",
+        "image": "../../../assets/image/food/adicional1.jpg",
+        "name": "Bola de helado de vainilla",
+        "price": "1"
+      },
+      {
+        "id": "a02",
+        "image":"../../../assets/image/food/adicional2.jpg",
+        "name": "Syrope de chocolate",
+        "price": "1"
+      },
+      {
+        "id": "a03",
+        "image":"../../../assets/image/food/adicional3.jpg",
+        "name": "Frutos secos",
+        "price": "1"
+      }
+        ]
+      },
+
+      {
+        "id": "02",
+        "image": "../../../assets/image/food/desayuno2.jpg",
+        "food": "Dimsum o boyos rellenos",
+        "price": "2",
+        "extra": [
+          {
+            "id": "a01",
+            "image": "../../../assets/image/food/adicional1.jpg",
+            "name": "Bola de helado de vainilla",
+            "price": "1"
+          },
+          {
+            "id": "a02",
+            "image":"../../../assets/image/food/adicional2.jpg",
+            "name": "Syrope de chocolate",
+            "price": "1"
+          },
+          {
+            "id": "a03",
+            "image":"../../../assets/image/food/adicional3.jpg",
+            "name": "Frutos secos",
+            "price": "1"
+          }
+            ]
+      },
+
+      {
+        "id": "03",
+        "image": "../../../assets/image/food/desayuno3.jpg",
+        "food": "Tarta de frutas y crema pastelera",
+        "price": "3",
+        "extra": [
+          {
+            "id": "a01",
+            "image": "../../../assets/image/food/adicional1.jpg",
+            "name": "Bola de helado de vainilla",
+            "price": "1"
+          },
+          {
+            "id": "a02",
+            "image":"../../../assets/image/food/adicional2.jpg",
+            "name": "Syrope de chocolate",
+            "price": "1"
+          },
+          {
+            "id": "a03",
+            "image":"../../../assets/image/food/adicional3.jpg",
+            "name": "Frutos secos",
+            "price": "1"
+          }
+            ]
+
+      },
+
+      {
+        "id": "04",
+        "image": "../../../assets/image/food/desayuno4.jpg",
+        "food": "Mini tarta de frutas",
+        "price": "2",
+        "extra": [
+          {
+            "id": "a01",
+            "image": "../../../assets/image/food/adicional1.jpg",
+            "name": "Bola de helado de vainilla",
+            "price": "1"
+          },
+          {
+            "id": "a02",
+            "image":"../../../assets/image/food/adicional2.jpg",
+            "name": "Syrope de chocolate",
+            "price": "1"
+          },
+          {
+            "id": "a03",
+            "image":"../../../assets/image/food/adicional3.jpg",
+            "name": "Frutos secos",
+            "price": "1"
+          }
+            ]
+      }
+    ]
+    },
+
+    {
+      "id":"1",
+      "name":"cake",
+       "product":[
+
+        {
+      "id": "01",
+      "image": "../../../assets/image/food/pastel1.jpg",
+      "food": "Pastel cítrico de limón y gengibre",
+      "price": "5"
+        },
+
+        {
+          "id": "02",
+          "image": "../../../assets/image/food/pastel2.jpg",
+          "food": "Pastel vegano de coco y trufas",
+          "price": "4"
+        },
+
+        {
+          "id": "03",
+          "image": "../../../assets/image/food/pastel3.jpg",
+          "food": "Pastel de choclate, pimienta negra y frambuesas ",
+          "price": "4"
+        },
+
+        {
+          "id": "04",
+          "image": "../../../assets/image/food/pastel4.jpg",
+          "food": "Pastel de lichy y yogurt",
+          "price": "4"
+        }
+
+
+    ]
+    },
+
+    {
+      "id":"2",
+      "name":"drink",
+       "product":[
+        {
+          "id": "01",
+          "image": "../../../assets/image/food/jugo1.jpg",
+          "food": "Bebida refrescante de kiwui y naranja",
+          "price": "3"
+        },
+
+        {
+          "id": "02",
+          "image": "../../../assets/image/food/jugo2.jpg",
+          "food": "Bebida refrescante de frambuesa y menta",
+          "price": "3"
+        },
+
+        {
+          "id": "03",
+          "image": "../../../assets/image/food/jugo3.jpg",
+          "food": "Bebida refrescante de arandanos y limón",
+          "price": "3"
+        },
+
+        {
+          "id": "04",
+          "image": "../../../assets/image/food/jugo4.jpg",
+          "food": "Bebida refrescante mixfrutal",
+          "price": "3"
+        }
+      ]
+    },
+
+    {
+      "id":"3",
+      "name":"tea",
+       "product":[
+        {
+          "id": "01",
+          "image": "../../../assets/image/food/tea1.jpg",
+          "food": "tea de manzanilla",
+          "price": "2"
+        },
+
+        {
+          "id": "02",
+          "image": "../../../assets/image/food/tea2.jpg",
+          "food": "tea de Hōjicha",
+          "price": "2"
+        },
+
+        {
+          "id": "03",
+          "image": "../../../assets/image/food/tea3.jpg",
+          "food": "tea rojo ",
+          "price": "2"
+        },
+
+        {
+          "id": "04",
+          "image": "../../../assets/image/food/tea4.jpg",
+          "food": "tea de varias hierbas",
+          "price": "2"
+        }
+      ]
+    }
+
+]
+

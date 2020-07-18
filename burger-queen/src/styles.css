@@ -1,50 +1,75 @@
 * {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
-}
-
-body {
-  background-image: url('./assets/image/Background.jpg');
-  background-repeat:no-repeat ;
-}
-
-img {
-  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 8px;
-padding: 2;
-}
+  body {
+    background-image: url('./assets/image/Background.jpg');
+    background-repeat:repeat-y ;
+  }
 
-p {
-  margin: 0;
-}
-
-.spacer {
-  flex: 1;
-}
+  img {
+    border-radius: 10px;
+    }
 
 
-span {
-  color: #DEAB29;
-}
+  p {
+    margin: 0;
+  }
 
-h2 {
-  color: #EBEBE3;
-}
+  .spacer {
+    flex: 1;
+  }
 
-.btn {
-background-color: #CBCCCC;
-margin-right: 8px;
-border-radius: 10;
-}
+  .btn-primary,.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-v.dropdown-toggle {
+    color:#000;
+    background-color: #C2B2A3;
+    border-color: #C2B2A3;
+  }
+  .btn-primary:hover, .btn-primary:focus{
+    background-color: #88796c;
+    border-color: #3f3a35;
+  }
 
+  .btn-success,.btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color:#000;
+    background-color: #DEAB29;
+    border-color: #5f4911;
+  }
+  .btn-success:hover, .btn-success:focus{
+    background-color: #aa821d;
+    border-color: #201906;
+  }
 
+  span {
+    color: #DEAB29;
+  }
+
+  h2 {
+    color: #EBEBE3;
+  }
+
+  .bg-dark {
+    background-color: #344D4E !important;
+  }
+  .table-dark {
+    color: #fff  !important;
+    border-color: #000  !important;
+    background-color: #4D4D4D  !important;
+    border-radius: 10px !important;
+    border:1px !important;
+  }
+
+  .table-dark thead tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  .table-dark thead tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  .table-dark td, .table-dark th, .table-dark thead th {
+    border-color: #DEAB29;
+  }

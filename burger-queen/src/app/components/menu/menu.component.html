@@ -1,19 +1,74 @@
-<app-ingreso></app-ingreso>
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row mt-3">
+    <div class="col">
+      <button type="button" class="btn mr-2" *ngFor="let item of menu;let i = index; " (click)="getProduct(i)"
+        [ngClass]="{ 'btn-success': i == indexMenu,
+                 'btn-primary': i != indexMenu }">{{item.name}}</button>
+    </div>
+  </div>
 
-<!--food-->
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-6">
-
-  <app-menu-food></app-menu-food>
-
+  <div class="row mt-3">
+    <div class="col-3">
+      <div class="card  mb-2" *ngFor="let product of products; let i = index;">
+        <a (click)="addProduct(i)">
+          <img src="{{product.image}}" class="card-img-top w-100" alt="{{product.food}}">
+          <div class="card-body">
+            <p class="card-text">{{product.food}}</p>
+            <h5 class="card-title text-right">$ {{product.price |number }}</h5>
+          </div>
+        </a>
+      </div>
     </div>
 
-<!--order-->
-  <div class="col-md-6">
+    <div class="col-9">
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="cliente">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="mesa">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th colspan="3" scope="col">Cantidad</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Total</th>
+                <th scope="col">Eliminar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of selectProduct; let i = index">
+                <td><button class="btn btn-danger" (click)="changeCount(i,-1)"*ngIf="product.count>1">-</button></td>
+                <td class="text-right">{{product.count}}</td>
+                <td><button class="btn btn-success" (click)="changeCount(i,1)">+</button></td>
+                <td>{{product.food}}</td>
+                <td class="text-right">{{product.price|number}}</td>
+                <td class="text-right">{{product.price*product.count|number}}</td>
+                <td><button class="btn btn-danger" (click)="delProduct(i)">borrar</button></td>
+              </tr>
+              <tr>
+                <td colspan="5">Total</td>
+                <td class="text-right">{{sum|number}}</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
 
-    <app-menu-add></app-menu-add>
-
+          <button type="button" class="btn btn-warning">Confirmar Pedido</button>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  </div>
+</div>

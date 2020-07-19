@@ -20,7 +20,9 @@ import { ConexionService } from './services/conexion.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { OrderService } from './order.service';
+import { KitchenService } from './kitchen.service';
 import { MenuService } from './services/menu.service';
+import { WaiterComponent } from './waiter/waiter.component';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { MenuService } from './services/menu.service';
     IngresoComponent,
     MenuComponent,
     CocinaComponent,
-    NavbarComponent
+    NavbarComponent,
+    WaiterComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,7 @@ import { MenuService } from './services/menu.service';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [ConexionService, OrderService, MenuService],
+  providers: [ConexionService, OrderService, MenuService, KitchenService],
   bootstrap: [AppComponent]
 })
 

@@ -6,14 +6,14 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class OrderService {
+export class KitchenService {
 private collectionOrder: AngularFirestoreCollection<Table>;
 public listTables: Table[]= [];
   constructor(private aM:AngularFirestore) {
 
   }
   getTables(){
-    this.collectionOrder=this.aM.collection<Table>('items',ref=>ref.where('state','==',1));
+    this.collectionOrder=this.aM.collection<Table>('items',ref=>ref.where('state','==',0));
    //   this.collectionOrder=this.aM.collection<Table>('items');
 
     return this.collectionOrder.valueChanges({idField: 'eventId'}).pipe(
@@ -27,8 +27,8 @@ console.log(orders)
     );
   }
 
-  closeTable(id: string){
-    this.collectionOrder.doc(id).update({state: 2});
+  delivery(id: string){
+    this.collectionOrder.doc(id).update({state: 1});
   }
 
 }

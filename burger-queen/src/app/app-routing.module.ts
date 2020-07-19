@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CocinaComponent } from './components/cocina/cocina.component';
+import { WaiterComponent } from './waiter/waiter.component';
 
 
 
@@ -35,6 +36,11 @@ const rutas: Routes = [
   {
     path: 'cocina',
     component: CocinaComponent
+  },
+
+  {
+    path: 'waiter',
+    component: WaiterComponent
   },
 
 ]

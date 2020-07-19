@@ -42,7 +42,7 @@ const rutas: Routes = [
 
 @NgModule({
 declarations:[],
-imports: [RouterModule.forRoot(rutas)],
+imports: [RouterModule.forRoot(rutas,{useHash:true})],
 exports: [
     RouterModule
   ]

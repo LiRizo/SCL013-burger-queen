@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
 import { MenuService } from 'src/app/services/menu.service';
-import { Observable, from } from 'rxjs';
+import { ConexionService } from 'src/app/services/conexion.service';
+import { Table } from 'src/app/models/table.models';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-menu',
@@ -15,8 +17,11 @@ export class MenuComponent implements OnInit {
   public selectProduct: any[] = [];
   public sum: number = 0;
   public indexMenu: number = 0;
+  public table: string;
+  public client: string;
 
-  constructor(private menuService: MenuService) {
+
+  constructor(private menuService: MenuService, public service: ConexionService) {
     menuService.getProducts().subscribe(
       (data) => {
         this.menu = data;
@@ -35,31 +40,41 @@ export class MenuComponent implements OnInit {
     this.indexMenu = index;
   }
 
-  addProduct(index: number){
+  addProduct(index: number) {
     this.selectProduct.push({
-      id:this.products[index]['id'],
+      id: this.products[index]['id'],
       count: 1,
-      food:this.products[index]['food'],
-      price:this.products[index]['price']
+      food: this.products[index]['food'],
+      price: this.products[index]['price']
     });
     this.calculate();
   }
 
-  delProduct(index: number){
-    this.selectProduct.splice(index,1);
+  delProduct(index: number) {
+    this.selectProduct.splice(index, 1);
     this.calculate();
   }
 
-  changeCount(index: number, count: number){
-    this.selectProduct[index].count+=count;
+  changeCount(index: number, count: number) {
+    this.selectProduct[index].count += count;
     this.calculate();
   }
 
-  calculate(){
-    this.sum=0;
-    for(let product of this.selectProduct) {
-      this.sum+=product.count*product.price;
+  calculate() {
+    this.sum = 0;
+    for (let product of this.selectProduct) {
+      this.sum += product.count * product.price;
     }
+  }
+  attach(forma) {
+    let sendTable: Table = {
+    table: forma.value.table,
+    client: forma.value.client,
+    date: new Date().getTime(),
+    state:0,
+    products: this.selectProduct
+    }
+    this.service.attachItem(sendTable);
   }
 
   ngOnInit(): void {

@@ -1,46 +1,35 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { Observable, from } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { OrderService } from 'src/app/order.service';
-
-export interface Item {
-
-  client: string;
-  table: number;
-  lot: number;
-  image: string;
-  food: string;
-  price: number;
-}
+import { Table } from 'src/app/models/table.models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConexionService {
 
-  private itemDoc: AngularFirestoreDocument<Item>;
-  private itemsCollection: AngularFirestoreCollection<Item>;
-  items: Observable<Item[]>;
+  private productDoc: AngularFirestoreDocument<Table>;
+  private productsCollection: AngularFirestoreCollection<Table>;
+  products: Observable<Table[]>;
 
   constructor(private readonly afs: AngularFirestore) {
-    this.itemsCollection = afs.collection<Item>('items');
-    this.items = this.itemsCollection.snapshotChanges().pipe(
+    this.productsCollection = afs.collection<Table>('items');
+    this.products = this. productsCollection.snapshotChanges().pipe(
       map(actions => actions.map(a => {
-        const data = a.payload.doc.data() as Item;
+        const data = a.payload.doc.data() as Table;
         const id = a.payload.doc.id;
         return { id, ...data };
       }))
     );
   }
   listaItem(){
-    return this.items;
+    return this.products;
   }
-  attachItem( item: Item){
-    this.itemsCollection.add(item);
+  attachItem( product: Table){
+    console.log(product)
+    this.productsCollection.add( product);
    }
-   cleanItem(item){
-     this.itemDoc = this.afs.doc<Item>(`items/${item.id}`);
-     this.itemDoc.delete();
-   }
+
 }

@@ -19,6 +19,8 @@ import { ConexionService } from './services/conexion.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { OrderService } from './order.service';
+import { MenuService } from './services/menu.service';
 
 
 @NgModule({
@@ -40,7 +42,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [ConexionService],
+  providers: [ConexionService, OrderService, MenuService],
   bootstrap: [AppComponent]
 })
 

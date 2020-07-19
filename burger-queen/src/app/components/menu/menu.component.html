@@ -13,8 +13,8 @@
       <div class="card  mb-2" *ngFor="let product of products; let i = index;">
         <a (click)="addProduct(i)">
           <img src="{{product.image}}" class="card-img-top w-100" alt="{{product.food}}">
-          <div class="card-body">
-            <p class="card-text">{{product.food}}</p>
+          <div class="card-body-dark">
+            <p class="card-text-dark">{{product.food}}</p>
             <h5 class="card-title text-right">$ {{product.price |number }}</h5>
           </div>
         </a>

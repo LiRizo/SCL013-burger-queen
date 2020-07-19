@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<div class="card-columns">
+  <div *ngFor="let order of aM.listTables" class="card">Cliente:{{order.client}}
+    <p>Mesa: {{order.table}}</p>
+    <div *ngFor="let ped of order.products" class="card-body">
+      <h5 class="card-title">
+        {{ped.count}} {{ped.food}}
+      </h5>
+    </div>
+    <!--<button type="button" class="btn btn-danger mt-2" (click)="()">
+      Orden Entregada
+    </button>-->
+  </div>
+</div>

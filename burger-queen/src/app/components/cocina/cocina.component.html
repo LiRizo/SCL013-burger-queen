@@ -1,26 +1,28 @@
-<app-ingreso></app-ingreso>
-<h2> COCINA <span>|</span> OREDENES EN ESPERA</h2>
-<!--<h2> COCINA <span>|</span> ORDENES LISTAS</h2>-->
+<app-navbar></app-navbar>
 
-<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;"*ngFor="let order of aM.listTables">
-  <div class="card-header bg-warning ">Cliente:{{order.client}}
-  <p>Mesa: {{order.table}}</p>
-</div>
-  <div class="card-body">
-    <ul class="list-group">
 
-      <li class="list-group-item active">Productos</li>
-      <li class="list-group-item"
-      *ngFor="let ped of order.products">
-        {{ped.count}} {{ped.food}}
-      </li>
 
-    </ul>
-    <button type="button"
-            class="btn btn-danger mt-2"
-    (click)="waiter(order.eventId)">
-      Entregar pedido a mesero
-    </button>
+<div class="card-columns">
+  <div *ngFor="let order of aM.listTables" class="card">
+    <div class="card-header bg-warning ">Cliente:{{order.client}}
+      <p>Mesa: {{order.table}}</p>
+    </div>
+    <div class="card-body">
+      <ul class="list-group">
 
+        <li class="list-group-item active">Productos</li>
+        <li class="list-group-item"
+        *ngFor="let ped of order.products">
+          {{ped.count}} {{ped.food}}
+        </li>
+
+      </ul>
+      <button type="button"
+              class="btn btn-danger mt-2"
+      (click)="waiter(order.eventId)">
+        Entregar pedido a mesero
+      </button>
+      </div>
   </div>
+</div>
 

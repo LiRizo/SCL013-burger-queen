@@ -74,7 +74,13 @@ export class MenuComponent implements OnInit {
     state:0,
     products: this.selectProduct
     }
-    this.service.attachItem(sendTable);
+    this.service.attachItem(sendTable)
+    .then(() => {
+      this.selectProduct = [];
+      this.calculate();
+      console.log("paso")
+    })
+
   }
 
   ngOnInit(): void {

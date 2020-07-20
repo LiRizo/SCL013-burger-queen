@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { KitchenService } from 'src/app/kitchen.service';
+import { KitchenService } from 'src/app/services/kitchen.service';
 
 @Component({
   selector: 'app-cocina',

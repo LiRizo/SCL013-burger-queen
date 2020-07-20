@@ -13,16 +13,18 @@ import { HomeComponent } from './components/home/home.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CocinaComponent } from './components/cocina/cocina.component';
+import { WaiterComponent } from './components/waiter/waiter.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CheckComponent } from './components/check/check.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ConexionService } from './services/conexion.service';
 
 import { HttpClientModule } from '@angular/common/http';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { OrderService } from './order.service';
-import { KitchenService } from './kitchen.service';
+import { OrderService } from './services/order.service';
+import { KitchenService } from './services/kitchen.service';
 import { MenuService } from './services/menu.service';
-import { WaiterComponent } from './waiter/waiter.component';
+import { CheckService } from './services/check.service';
 
 
 @NgModule({
@@ -34,6 +36,7 @@ import { WaiterComponent } from './waiter/waiter.component';
     CocinaComponent,
     NavbarComponent,
     WaiterComponent,
+    CheckComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,7 @@ import { WaiterComponent } from './waiter/waiter.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [ConexionService, OrderService, MenuService, KitchenService],
+  providers: [ConexionService, OrderService, MenuService, KitchenService, CheckService],
   bootstrap: [AppComponent]
 })
 

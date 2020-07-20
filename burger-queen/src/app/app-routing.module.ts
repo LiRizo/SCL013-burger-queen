@@ -6,9 +6,8 @@ import { HomeComponent } from './components/home/home.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CocinaComponent } from './components/cocina/cocina.component';
-import { WaiterComponent } from './waiter/waiter.component';
-
-
+import { WaiterComponent } from './components/waiter/waiter.component';
+import { CheckComponent } from './components/check/check.component';
 
 const rutas: Routes = [
 
@@ -42,6 +41,10 @@ const rutas: Routes = [
     path: 'waiter',
     component: WaiterComponent
   },
+  {
+  path: 'check',
+  component: CheckComponent
+},
 
 ]
 

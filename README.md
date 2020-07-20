@@ -14,6 +14,9 @@
 
 Un restaurant de pasteles japoneses, su mejor opción para ir a desayunar y pasar un momento agradable, no solo para los clientes sino para los trabajadores del lugar, para ellos se creó una app para el menú donde el mesero pueda hacer las ordenes y enviarlas rápidamente a la cocina, tener control de los pedidos en cuanto al tiempo en ejecución en la misma y ordenes listas para servir y poder observar al terminar la jornada, toda la trayectoria del día.
 
+### Pruebala
+[Moon Gold](https://moongold-lab.web.app)
+
 ## 2. Planificación del proyecto y diseño
 
 Información  del cliente:
@@ -57,7 +60,13 @@ Fácil, simple, amigable e intuitivo esas eran las características para elabora
 
 En la búsqueda de la paleta de colores, se necesitaba que fueran colores dark en el background ya que ayudan con el descanso visual del mesero, se utilizo una paleta de color como ref de los colores deseados.
 
-<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/paletaDeColor.png">
+<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/paletaDeColor.png" width= 408px>
+
+### Font
+
+Una tipografía semi-cursiva que al verla genere sutileza y la sensacion que estuviera hecha en acuarela, haciendola mas natural, por ello se eligió:
+
+[Merienda](https://fonts.google.com/specimen/Merienda?sidebar.open&selection.family=Merienda:wght@400;700#standard-styles)
 
 ## 4. Historias de Usuario
 

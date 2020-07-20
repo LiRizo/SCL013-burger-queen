@@ -73,3 +73,21 @@
   .table-dark td, .table-dark th, .table-dark thead th {
     border-color: #DEAB29;
   }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #4D4E4E;
+    color: white;
+    font-weight: 600;
+  }
+
+  .colort {
+    color: darkgrey;
+  }
+

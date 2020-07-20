@@ -3,22 +3,22 @@
 
 
 <div class="card-columns">
-  <div *ngFor="let order of aM.listTables" class="card">
+  <div *ngFor="let order of aM.listTables" class="card bg-secondary">
     <div class="card-header bg-warning ">Cliente:{{order.client}}
       <p>Mesa: {{order.table}}</p>
     </div>
-    <div class="card-body">
-      <ul class="list-group">
+    <div class="card-body bg-secondary">
+      <ul class="list-group bg-secondary">
 
-        <li class="list-group-item active">Productos</li>
-        <li class="list-group-item"
+        <li class="list-group-item active-warning bg-secondary">Productos</li>
+        <li class="list-group-item bg-secondary"
         *ngFor="let ped of order.products">
           {{ped.count}} {{ped.food}}
         </li>
 
       </ul>
       <button type="button"
-              class="btn btn-danger mt-2"
+              class="btn btn-warning mt-2"
       (click)="waiter(order.eventId)">
         Entregar pedido a mesero
       </button>

@@ -1,15 +1,19 @@
 <app-navbar></app-navbar>
 
 <div class="card-columns">
-  <div *ngFor="let order of aM.listTables" class="card">Cliente:{{order.client}}
-    <p>Mesa: {{order.table}}</p>
-    <div *ngFor="let ped of order.products" class="card-body">
-      <h5 class="card-title">
-        {{ped.count}} {{ped.food}}
-      </h5>
+  <div *ngFor="let order of aM.listTables" class="card-dark">
+    <div class="card border-bg-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header bg-warning  border-bg-secondary">
+        Cliente: {{order.client}}
+        <p>Mesa: {{order.table}}</p>
+      </div>
+      <div class="card-body text-white bg-secondary">
+        <h5 class="card-title">Detalle:</h5>
+      </div>
+      <div  *ngFor="let ped of order.products"class="card-footer bg-secondary border-bg-secondary">
+        <i class="fas fa-check-circle"> {{ped.count}} {{ped.food}}</i>
+      </div>
     </div>
-    <!--<button type="button" class="btn btn-danger mt-2" (click)="()">
-      Orden Entregada
-    </button>-->
-  </div>
-</div>
+
+
+

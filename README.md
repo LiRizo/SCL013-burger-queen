@@ -33,7 +33,7 @@ Teniendo una nocion de lo que se desea se comienza con una planificacion de obje
 ### Trello
 
 
-<img src="https://github.com/LiRizo/SCL013-social-network/blob/master/src/images/MaterialReadme/TrelloPL.JPG">
+<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/trello.JPG">
 
 [Link Trello](https://trello.com/b/MfntwPzz/burger-queen)
 
@@ -41,7 +41,7 @@ Teniendo una nocion de lo que se desea se comienza con una planificacion de obje
 
 Fácil, simple, amigable e intuitivo esas eran las características para elaborar el diagrama 
 
-<img src="https://github.com/LiRizo/SCL013-social-network/blob/master/src/images/MaterialReadme/TrelloPL.JPG">
+<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/diagramaDeFlujo.JPG">
 
 ### Prototipo de Alta fidelidad
 

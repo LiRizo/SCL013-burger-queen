@@ -1,9 +1,20 @@
 <app-navbar></app-navbar>
 
-<button type="button" class="btn btn-secondary btn-lg" routerLink='/menu'>Mesero
-  <i class="fas fa-utensils"></i>
-</button>
-<button type="button" class="btn btn-secondary btn-lg" routerLink='/cocina'>Cocina
-  <i class="fas fa-concierge-bell"></i>
-</button>
-<router-outlet></router-outlet>
+
+<div class="d-flex justify-content-center">
+  <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+    <div class="card-header"><div class="d-flex justify-content-center"> Cargo </div></div>
+    <div class="card-body">
+<div class="row">
+  <button type="button" class="btn btn-primary homet mr-2" routerLink='/menu'>Mesero
+    <i class="fas fa-utensils"></i>
+  </button>
+  <button type="button" class="btn btn-primary homet mr-2" routerLink='/cocina'>Cocina
+    <i class="fas fa-concierge-bell"></i>
+  </button>
+</div>
+    </div>
+  </div>
+</div>
+
+

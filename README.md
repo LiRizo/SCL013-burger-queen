@@ -2,16 +2,17 @@
 
 ## Índice
 
-* [1. Moon gold ](#1-Moon-gold )
+* [1. Moon Gold ](#1-Moon-Gold)
 * [2. Planificación del proyecto y diseño](#2-Planificación-del-proyecto-y-diseño)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+* [3. Busqueda de diseño](#3-Busqueda-de-diseño)
+* [4. Historias de usuario](#4-Historias-de-usuario)
+
 
 ***
 
-## 1. Preámbulo
+## 1. Moon Gold
+
+<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/moon-gold.png">
 
 Un restaurant de pasteles japoneses, su mejor opción para ir a desayunar y pasar un momento agradable, no solo para los clientes sino para los trabajadores del lugar, para ellos se creó una app para el menú donde el mesero pueda hacer las ordenes y enviarlas rápidamente a la cocina, tener control de los pedidos en cuanto al tiempo en ejecución en la misma y ordenes listas para servir y poder observar al terminar la jornada, toda la trayectoria del día.
 
@@ -31,164 +32,36 @@ Teniendo una nocion de lo que se desea se comienza con una planificacion de obje
 
 ### Trello
 
+
+<img src="https://github.com/LiRizo/SCL013-social-network/blob/master/src/images/MaterialReadme/TrelloPL.JPG">
+
+[Link Trello](https://trello.com/b/MfntwPzz/burger-queen)
+
 ### Diagrama de flujo
 
 Fácil, simple, amigable e intuitivo esas eran las características para elaborar el diagrama 
 
+<img src="https://github.com/LiRizo/SCL013-social-network/blob/master/src/images/MaterialReadme/TrelloPL.JPG">
 
-## 3. Objetivos de aprendizaje
+### Prototipo de Alta fidelidad
 
-El objetivo principal de este proyecto es aprender a construir una _interfaz web_
-usando el _framework_ elegido (React o Angular). Todos estos frameworks de
-Front-end atacan el mismo problema: **cómo mantener la interfaz y el estado sincronizados**.
-Así que esta experiencia espera familiarizarte con el concepto de _estado de pantalla_,
-y cómo cada cambio sobre el estado se va a ir reflejando en la interfaz (por ejemplo,
-cada vez que agregamos un _producto_ a un _pedido_, la interfaz debe actualizar
-la lista del pedido y el total).
+### Primeros pasos
 
-A continuación puedes ver los objetivos de aprendizaje de este proyecto:
+<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/FigmaIdea.JPG">
 
-### HTML y CSS
+### Diseño final
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
-* [ ] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [ ] [Uso de Media Queries.](https://developer.mozilla.org/es/docs/CSS/Media_queries)
+<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/FigmaDefinitivo.JPG">
 
-### JavaScript
+## 3. Busqueda de diseño
 
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Manipular arrays (filter | map | sort | reduce)
-* [ ] Manipular objects (key | value)
-* [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-| [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos atómicos y estructurados.
-* [ ] [Uso de callbacks.](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
-* [ ] [Consumo de Promesas.](https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises)
+### Paleta de color
 
-### Testing
+En la búsqueda de la paleta de colores, se necesitaba que fueran colores dark en el background ya que ayudan con el descanso visual del mesero, se utilizo una paleta de color como ref de los colores deseados.
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/paletaDeColor.png">
 
-### Estructura del código y guía de estilo
-
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
-
-### Git y Github
-
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboración en Github (branches | pull requests | |tags)
-* [ ] Organización en Github (projects | issues | labels | milestones)
-
-### Firebase
-
-* [ ] [Firestore.](https://firebase.google.com/docs/firestore)
-* [ ] [Firebase Auth.](https://firebase.google.com/docs/auth/web/start)
-* [ ] [Firebase security rules.](https://firebase.google.com/docs/rules)
-* [ ] Observadores. ([onAuthStateChanged](https://firebase.google.com/docs/auth/web/manage-users?hl=es#get_the_currently_signed-in_user)
- | [onSnapshot](https://firebase.google.com/docs/firestore/query-data/listen#listen_to_multiple_documents_in_a_collection))
-
-### Angular
-
-* [ ] [Components & templates.](https://angular.io/guide/architecture-components#introduction-to-components)
-* [ ] [Directivas estructurales (ngIf / ngFor)](https://angular.io/guide/template-syntax#built-in-structural-directives)
-* [ ] [@Input | @Ouput](https://angular.io/guide/component-interaction#component-interaction)
-* [ ] [Creación y uso de servicios.](https://angular.io/guide/architecture-services#providing-services)
-* [ ] [Manejos de rutas.](https://angular.io/guide/router)
-* [ ] [Creación y uso Observables.](https://angular.io/guide/observables-in-angular)
-* [ ] [Uso de HttpClient.](https://angular.io/guide/http)
-* [ ] [Estilos de componentes (ngStyle / ngClass)](https://angular.io/guide/template-syntax#built-in-directives)
-
-### React
-
-* [ ] [`JSX`](https://es.reactjs.org/docs/introducing-jsx.html)
-* [ ] [Componentes `class` y componentes `function`](https://es.reactjs.org/docs/components-and-props.html#function-and-class-components)
-* [ ] `props`
-* [ ] [Eventos en React.](https://es.reactjs.org/docs/handling-events.html)
-* [ ] [Listas y keys.](https://es.reactjs.org/docs/lists-and-keys.html)
-* [ ] [Renderizado condicional.](https://es.reactjs.org/docs/conditional-rendering.html)
-* [ ] [Elevación de estados.](https://es.reactjs.org/docs/lifting-state-up.html)
-* [ ] [`hooks`](https://es.reactjs.org/docs/hooks-intro.html)
-* [ ] [`CSS` modules.](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet)
-* [ ] [React Router.](https://reacttraining.com/react-router/web)
-
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
-
-## 4. Consideraciones generales
-
-Este proyecto se debe "resolver" de forma individual.
-
-Trabaja en una historia hasta terminarla antes de pasar a la siguiente. Trabaja
-hasta la historia que puedas en el tiempo especificado.
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6+), HTML y CSS y empaquetada de manera automatizada.
-En este proyecto Sí está permitido usar librerías o frameworks
-(debes elegir entre [React](https://es.reactjs.org/) o
-[Angular](https://angular.io/)).
-
-La aplicación debe ser un _Single Page App_. Los pedidos los tomaremos desde una
-_tablet_, pero **no queremos una app nativa**, sino una web app que sea
-**responsive** y pueda funcionar **offline**.
-
-Necesitamos pensar bien en el aspecto UX de de quienes van a tomar los pedidos,
- el tamaño y aspecto de los botones, la visibilidad del estado actual del
- pedido, etc.
-
-La aplicación desplegada debe tener 80% o más el las puntuaciones de
-Performance, Progressive Web App, Accessibility y Best Practices de Lighthouse.
-
-La aplicación debe hacer uso de `npm-scripts` y contar con scripts `start`,
-`test`, `build` y `deploy`, que se encarguen de arrancar, correr las pruebas,
-empaquetar y desplegar la aplicación respectivamente.
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_,
-_lines_ y _branches_.
-
-Este proyecto incluye un _boilerplate_ con el código necesario para arrancar con
-la parte de backend ya resuelta. El _boilerplate_ incluye los siguientes
-archivos/carpetas con la configuración de Fierbase (hosting, firestore y
-functions):
-
-```text
-./04-burger-queen/
-├── firebase.json
-├── firestore.indexes.json
-├── firestore.rules
-├── functions
-│   ├── index.js
-│   ├── package.json
-└── README.md
-```
-
-Por otro lado, la parte de la interfaz no está incluida, por lo que, deberás
-definir la estructura de carpetas y archivos que consideres necesaria. Puedes
-guiarte de las convenciones del _framework_ elegido. Por ende, los _tests_ y el
-_setup_ necesario para ejecutarlos, serán hechos por ti.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-### Definición del producto
-
-El [_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s) nos
-presenta este _backlog_ que es el resultado de su trabajo con el cliente hasta
-hoy.
-
-***
+## 4. Historias de Usuario
 
 #### [Historia de usuario 1] Mesero/a debe poder tomar pedido de cliente
 
@@ -260,108 +133,3 @@ rápidamente a los clientes que las hicieron.
   terminado. Todo esto para poder tener estadísticas en el futuro.
 
 ***
-
-## 6. Pistas, tips y lecturas complementarias
-
-### Primeros pasos
-
-1. El primer paso de este proyecto debe ser convertir el menú descrito por el
-   cliente en una estructura que podamos poner en un archivo JSON para después
-   _pintar_ en la pantalla
-
-2. Haz un _fork_ de este repo (en GitHub).
-
-3. Clona tu _fork_ en tu computadora:
-
-   ```sh
-   git clone git@github.com:<tu-usuario-de-github>/<cohortid>-burger-queen.git
-   cd <cohortid>-burger-queen
-   ```
-
-4. Crea una rama a partir de `master` para empezar a trabajar. Por ejemplo:
-
-   ```sh
-   git checkout -b develop
-   ```
-
-5. Crear proyecto en [Firebase](https://firebase.google.com/)
-
-6. Habilitar Firestore (_comenzar en modo bloqueado_) en sección de "Bases de
-   Datos" de [Firebase console](https://console.firebase.google.com/).
-
-7. Instalar utilidad de línea de comando de Firebase:
-
-   ```sh
-   npm i -g firebase-tools
-   ```
-
-8. Agregamos entorno de producción para desplegar:
-
-   ```sh
-   firebase use --add
-   ```
-
-9. Instalar dependencias de cloud functions:
-
-   ```sh
-   # usando yarn
-   cd functions && yarn && cd ..
-   # alternativamente, usando npm
-   cd functions && npm install && cd ..
-   ```
-
-10. Desplegar: `firebase deploy`
-
-11. Llegado a este punto ya puedes comenzar con el _front-end_ :wink:
-
-***
-
-Nota para estudiantes que elijan React y quieran usar `create-react-app`:
-
-Si tratas de usar `create-react-app` en el directorio del proyecto recibirás un
-error diciendo que hay archivos que podrían presentar un conflicto. Para evitar
-este problema puedes crear una nueva app usando `create-react-app` y de ahí
-_mezclarla_ con la carpeta del proyecto:
-
-```sh
-# si estabase en la carpeta del proyecto, salimos a la carpeta de más arriba
-cd ..
-
-create-react-app burger-queen-tmp
-cp -r burger-queen/* burger-queen-tmp/
-cp -r burger-queen-tmp/.gitignore burger-queen-tmp/* burger-queen/
-rm -rf burger-queen-tmp
-cd burger-queen
-```
-
-### Otros recursos
-
-#### Frameworks / libraries
-
-* [React](https://es.reactjs.org/)
-* [Angular](https://angular.io/)
-
-#### Herramientas
-
-* [npm-scripts](https://docs.npmjs.com/misc/scripts)
-* [Babel](https://babeljs.io/)
-* [webpack](https://webpack.js.org/)
-
-#### PWA
-
-* [Tu primera Progressive Web App - Google developers](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=es)
-* [Progressive Web Apps - codigofacilito.com](https://codigofacilito.com/articulos/progressive-apps)
-* [offlinefirst.org](http://offlinefirst.org/)
-* [Usando Service Workers - MDN](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-* [Cómo habilitar datos sin conexión - Firebase Docs](https://firebase.google.com/docs/firestore/manage-data/enable-offline?hl=es-419)
-
-#### Serverless
-
-* [Qué es eso de serverless? - @PamRucinque en Medium](https://medium.com/@PamRucinque/qu%C3%A9-es-eso-de-serverless-f4f6c8949b87)
-* [Qué es Serverless? | FooBar - YouTube](https://www.youtube.com/watch?v=_SYHUpLi-2U)
-* [Firebase](https://firebase.google.com/)
-* [Serverless Architectures - Martin Fowler](https://www.martinfowler.com/articles/serverless.html)
-
-#### Cloud functions
-
-* [Cloud functions - Firebase Docs](https://firebase.google.com/docs/functions/?hl=es-419)

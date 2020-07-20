@@ -1,24 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { OrderService } from '../services/order.service';
+import { CheckService } from 'src/app/services/check.service';
 
 @Component({
-  selector: 'app-waiter',
-  templateUrl: './waiter.component.html',
-  styleUrls: ['./waiter.component.css']
+  selector: 'app-check',
+  templateUrl: './check.component.html',
+  styleUrls: ['./check.component.css']
 })
-export class WaiterComponent implements OnInit {
+export class CheckComponent implements OnInit {
 
-  constructor(public aM: OrderService) {
+  constructor(public aM: CheckService) {
     this.aM.getTables().subscribe(orders => {
       console.log(orders)
     })
-  }
+   }
 
   ngOnInit(): void {
   }
-
-  close(idTable: string){
-    this.aM.closeTable(idTable);
-    }
 
 }

@@ -17,6 +17,7 @@ import { WaiterComponent } from './components/waiter/waiter.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CheckComponent } from './components/check/check.component';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { ConexionService } from './services/conexion.service';
 

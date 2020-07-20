@@ -10,9 +10,7 @@
 
 ***
 
-## 1. Moon Gold
-
-<img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/moon-gold.png" width= 176px>
+## 1. Moon Gold <img src="https://github.com/LiRizo/SCL013-burger-queen/blob/master/burger-queen/src/assets/image/moon-gold.png" width= 176px>
 
 Un restaurant de pasteles japoneses, su mejor opción para ir a desayunar y pasar un momento agradable, no solo para los clientes sino para los trabajadores del lugar, para ellos se creó una app para el menú donde el mesero pueda hacer las ordenes y enviarlas rápidamente a la cocina, tener control de los pedidos en cuanto al tiempo en ejecución en la misma y ordenes listas para servir y poder observar al terminar la jornada, toda la trayectoria del día.
 

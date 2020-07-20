@@ -21,16 +21,17 @@
       </div>
     </div>
 
+    <!--aqui comienza nuestra orden-->
 
     <div class="col-9">
       <form (ngSubmit)="attach(forma)"#forma="ngForm">
-        <div class="row">
-          <div class="col">
-            <h5>Cliente:</h5>
+        <div class="d-flex justify-content-center">
+          <div class="row ml-2">
+            <h5>Cliente: </h5>
             <input type="text" placeholder="cliente" name="client" class="clients" [ngModel]="client">
           </div>
-          <div class="col">
-            <h5>Mesa:</h5>
+          <div class="row">
+            <h5>Mesa: </h5>
             <input type="number" name="table" class="tables" [ngModel]="table">
           </div>
         </div>
@@ -48,13 +49,13 @@
               </thead>
               <tbody>
                 <tr *ngFor="let product of selectProduct; let i = index">
-                  <td><button class="btn btn-danger" type="button" (click)="changeCount(i,-1)" *ngIf="product.count>1">-</button></td>
+                  <td><button class="btn" type="button" (click)="changeCount(i,-1)" *ngIf="product.count>1"><i class="fas fa-minus-circle"></i></button></td>
                   <td class="text-right">{{product.count}}</td>
-                  <td><button class="btn btn-success"  type="button" (click)="changeCount(i,1)">+</button></td>
+                  <td><button class="btn"  type="button" (click)="changeCount(i,1)"><i class="fas fa-plus-circle"></i></button></td>
                   <td>{{product.food}}</td>
                   <td class="text-right">{{product.price|number}}</td>
                   <td class="text-right">{{product.price*product.count|number}}</td>
-                  <td><button class="btn btn-danger" (click)="delProduct(i)">borrar</button></td>
+                  <td><button class="btn" (click)="delProduct(i)"><i class="far fa-trash-alt"></i></button></td>
                 </tr>
                 <tr>
                   <td colspan="5">Total</td>
@@ -71,4 +72,3 @@
   </div>
 </div>
 
-<!--aqui comienza nuestra orden-->

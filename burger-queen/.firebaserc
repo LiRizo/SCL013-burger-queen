@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "moongold-lab"
+  },
+  "targets": {
+    "moongold-lab": {
+      "hosting": {
+        "burger-queen": [
+          "moongold-lab"
+        ]
+      }
+    }
+  }
+}
